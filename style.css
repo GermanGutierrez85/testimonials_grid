@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "daniel daniel jona kira"
+    "jean patrick patrick kira";
+    gap: 30px;
+    width: 1100px;
+    padding: 20px;
+}
+.daniel{
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 340px;
+    background-size: 110px;
+    color: hsl(0, 0%, 81%);
+}
+.jonathan{
+    grid-area: jona;
+    background-color:  hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+.jean{
+    grid-area: jean;
+    background-color: white;
+}
+.patrick{
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+.kira{
+    grid-area: kira;
+    background-color: white;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 10px;
+    padding: 30px;
+   /*  gap: 20px; */
+}
+.article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 10px;
+    gap: 40px;
+    padding: 30px 40px;
+}
+.user{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.avatar{
+    width: 35px;
+    border-radius: 100%;
+    border: 2px solid hsl(0, 0%, 81%);
+}
+.name{
+    font-weight: 600;
+}
+.status{
+    font-size: 13px;
+    opacity: 0.5;
+}
+.text1Guys{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text2Guys{
+    font-size: 13px;
+}
+.text1Girls{
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.text2Girls{
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+}
+
